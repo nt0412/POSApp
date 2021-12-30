@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 .side-bar {
+    z-index: 10;
     position: fixed;
     width: 85px;
     overflow: hidden;
@@ -9,10 +10,27 @@
     box-sizing: initial;
     background-image: linear-gradient(#087EE1, #60DFCD);
     transition: ease-in-out all 0.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.side-bar::-webkit-scrollbar {
+    width: 0px;
+}
+
+.side-bar-background {
+    position: absolute;
+    background-color: #087ee1;
+    width: 85px;
+    height: 70vh;
 }
 
 .side-bar.active {
+    z-index: 10;
     width: 300px;
+    transition: ease-in-out all 0.5s;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     transition: ease-in-out all 0.5s;
 }
 
@@ -83,9 +101,46 @@
 .toggle i.open,
 .toggle.active i.close {
     display: block;
+    transition: ease-in-out all 0.5s;
 }
 
 .toggle i.close,
 .toggle.active i.open {
     display: none;
+    transition: ease-in-out all 0.5s;
+}
+
+@media screen and (max-width: 1080px) {
+    .side-bar {
+        width: 0px;
+        background-image: linear-gradient(#F2F6FF, #F2F6FD);
+    }
+    .toggle {
+        background-color: #F2F6FF;
+    }
+    .toggle i {
+        color: #087EE1;
+    }
+    .side-bar ul li a .icon {
+        position: relative;
+        display: block;
+        min-width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.5rem;
+        color: #087EE1;
+    }
+    .side-bar ul li a .title {
+        position: relative;
+        display: block;
+        font-size: 1rem;
+        color: #087EE1;
+    }
+    .side-bar-background {
+        display: none;
+    }
+    .side-bar.active {
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+    }
 }

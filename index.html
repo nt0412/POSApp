@@ -9,11 +9,14 @@
     <title>POS App</title>
     <script src="https://kit.fontawesome.com/ccc4403fd5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/app-bar-style.css">
     <link rel="stylesheet" href="css/side-bar.css">
+    <link rel="stylesheet" href="css/calculated-page.css">
 </head>
 
 <body>
+    <!-- This is app bar -->
     <div class="app-bar">
         <div class="toggle" id="toggler">
             <i class="fas fa-bars open"></i>
@@ -31,6 +34,10 @@
             </div>
         </div>
     </div>
+    <!-- End app bar -->
+
+    <!-- This is SIDE bar -->
+    <div class="side-bar-background"></div>
     <div class="side-bar" id="side-bar-wide">
         <ul>
             <li class="feature active">
@@ -59,7 +66,260 @@
             </li>
         </ul>
     </div>
+    <!-- End SIDE bar -->
 
+    <!-- main -->
+    <div class="calculated-page-manager">
+        <div class="col-12 col-sm-12 col-md-4 left-section">
+            <div class="calculate-area">
+                <div class="header">
+                    <div class="header-item">
+                        <p>#</p>
+                    </div>
+                    <div class="group-header">
+                        <div class="header-item">
+                            <p>Name</p>
+                        </div>
+                        <div class="header-item">
+                            <p>Quantity</p>
+                        </div>
+                    </div>
+
+                    <div class="header-item">
+                        <p>Price</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="item-tile">
+                        <div class="number">1</div>
+                        <div class="product-info">
+                            <p class="name">M&M Chocolate</p>
+                            <p class="sku">SKU:04122WH1</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity-number">1</span>
+                            <button class="plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="price">
+                            <p class="main-price">$32</p>
+                            <p class="secondary-price">$100</p>
+                        </div>
+                    </div>
+                    <div class="item-tile">
+                        <div class="number">2</div>
+                        <div class="product-info">
+                            <p class="name">Sea Passion nº2</p>
+                            <p class="sku">SKU:04122WH1</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity-number">1</span>
+                            <button class="plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="price">
+                            <p class="main-price">$32</p>
+                            <p class="secondary-price">$100</p>
+                        </div>
+                    </div>
+                    <div class="item-tile">
+                        <div class="number">3</div>
+                        <div class="product-info">
+                            <p class="name">Snickers chocolate</p>
+                            <p class="sku">SKU:04122WH1</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity-number">1</span>
+                            <button class="plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="price">
+                            <p class="main-price">$32</p>
+                            <p class="secondary-price">$100</p>
+                        </div>
+                    </div>
+                    <div class="item-tile">
+                        <div class="number">4</div>
+                        <div class="product-info">
+                            <p class="name">Lay’s potato chips Classic</p>
+                            <p class="sku">SKU:04122WH1</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity-number">1</span>
+                            <button class="plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="price">
+                            <p class="main-price">$32</p>
+                            <p class="secondary-price">$100</p>
+                        </div>
+                    </div>
+                    <div class="item-tile">
+                        <div class="number">5</div>
+                        <div class="product-info">
+                            <p class="name">KitKat chocolate</p>
+                            <p class="sku">SKU:04122WH1</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity-number">1</span>
+                            <button class="plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="price">
+                            <p class="main-price">$32</p>
+                            <p class="secondary-price">$100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculated-detail">
+                    <div class="grp-detail">
+                        <div class="detail-item">
+                            <div class="detail-title">Temporary</div>
+                            <div class="detail-content">$424</div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-title">Temporary</div>
+                            <div class="detail-content">$424</div>
+                        </div>
+                    </div>
+                    <div class="grp-detail">
+                        <div class="detail-title"></div>
+                        <div class="detail-content"></div>
+                        <div class="detail-title"></div>
+                        <div class="detail-content"></div>
+                    </div>
+                    <div class="grp-detail">
+                        <div class="detail-title"></div>
+                        <div class="detail-content"></div>
+                        <div class="detail-title"></div>
+                        <div class="detail-content"></div>
+                    </div>
+
+                </div>
+                <div class="bill-manager">
+                    <button class="refresh-btn"><i class="fas fa-redo-alt"></i></button>
+                    <div class="bill-btn-manager">
+                        <button class="bill-btn">Customer 1</button>
+                        <button class="bill-btn">Customer 2</button>
+                        <button class="bill-btn">Customer 3</button>
+                        <button class="bill-btn">Customer 4</button>
+                        <button class="bill-btn">Customer 5</button>
+                        <button class="bill-btn">Customer 6</button>
+                        <button class="bill-btn">Customer 7</button>
+                        <button class="bill-btn">Customer 8</button>
+                    </div>
+
+                    <button class="add-bill-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="calculator"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-8 right-section">
+            <div class="choose-product-area">
+                <div class="header">
+                    <button class="filter-btn">
+                        <i class="fas fa-filter"></i>
+                    </button>
+                    <div class="search-area">
+                        <input type="text" placeholder="Searching...">
+                        <button class="search-btn">
+                            <i class="fab fa-sistrix"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/1.png" alt=""></div>
+                            <div class="card-title">Sea Passion nº2</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/2.jpg" alt=""></div>
+                            <div class="card-title">Snickers chocolate</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/3.jpg" alt=""></div>
+                            <div class="card-title">Lay’s potato chips Classic</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/4.png" alt=""></div>
+                            <div class="card-title">Hao Hao Noodle</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/5.jpg" alt=""></div>
+                            <div class="card-title">KitKat chocolate</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/6.jpg" alt=""></div>
+                            <div class="card-title">Lay’s potato chips Wavy</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/1.png" alt=""></div>
+                            <div class="card-title">Sea Passion nº2</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/1.png" alt=""></div>
+                            <div class="card-title">Sea Passion nº2</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                    <div class="card-border">
+                        <div class="card-wrapper">
+                            <div class="card-img"><img src="images/products/1.png" alt=""></div>
+                            <div class="card-title">Sea Passion nº2</div>
+                            <div class="card-sku">SKU: WDD234233</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-button-area"></div>
+        </div>
+    </div>
+    <!-- end -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/side-bar.js"></script>
 </body>
 
