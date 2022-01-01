@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 .side-bar {
-    z-index: 10;
+    z-index: 9;
     position: fixed;
     width: 85px;
     overflow: hidden;
-    top: 85px;
+    top: 0;
     left: 0;
     bottom: 0;
     box-sizing: initial;
@@ -18,15 +18,8 @@
     width: 0px;
 }
 
-.side-bar-background {
-    position: absolute;
-    background-color: #087ee1;
-    width: 85px;
-    height: 70vh;
-}
-
 .side-bar.active {
-    z-index: 10;
+    z-index: 9;
     width: 300px;
     transition: ease-in-out all 0.5s;
     border-top-right-radius: 1rem;
@@ -39,7 +32,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 85px;
 }
 
 .side-bar ul li {
@@ -89,6 +82,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .toggle i {
@@ -136,11 +131,11 @@
         font-size: 1rem;
         color: #087EE1;
     }
-    .side-bar-background {
-        display: none;
-    }
     .side-bar.active {
         border-top-right-radius: 0rem;
         border-bottom-right-radius: 0rem;
+    }
+    .side-bar ul li.active {
+        background-color: rgba(200, 200, 200, 0.4);
     }
 }
